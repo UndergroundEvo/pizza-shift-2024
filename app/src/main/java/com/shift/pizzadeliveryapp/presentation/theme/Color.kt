@@ -1,4 +1,4 @@
-package com.shift.pizzadeliveryapp.ui.theme
+package com.shift.pizzadeliveryapp.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
