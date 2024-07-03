@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PizzaDeliveryApp</string>
+    <string name="http_error">Http exception ocurred</string>
+    <string name="io_error">IOException ocurred</string>
+    <string name="item_load">Loading...</string>
+    <string name="item_error">Item error occured</string>
+    <string name="topAppBar_name">Pizza</string>
+    <string name="orders">Orders</string>
+    <string name="shopping_cart">Shopping cart</string>
+    <string name="profile">Profile</string>
+    <string name="min_price">"from "</string>
 </resources>

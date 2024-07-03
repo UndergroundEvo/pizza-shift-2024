@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Пицца \"Шифт\"</string>
+    <string name="http_error">Ошибка сервера</string>
+    <string name="io_error">Нет подключения к интернету!</string>
+    <string name="item_load">Загружаем</string>
+    <string name="item_error">"Проблема при загрузке предмета! "</string>
+    <string name="topAppBar_name">Пицца</string>
+    <string name="orders">Заказы</string>
+    <string name="shopping_cart">Корзина</string>
+    <string name="profile">Профиль</string>
+    <string name="min_price">"от "</string>
 </resources>
