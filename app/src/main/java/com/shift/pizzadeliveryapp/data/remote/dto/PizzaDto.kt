@@ -65,7 +65,7 @@ fun PizzaDto.toPizza(): Pizza {
         id = id,
         name = name,
         ingredients = ingredients.map { it.toPizza_Ingredients() },
-        toppings = ingredients.map { it.toPizza_Ingredients() },
+        toppings = toppings.map { it.toPizza_Toppings() },
         description = description,
         sizes = sizes.map { it.toPizza_Size() },
         dough = doughs.map { it.toPizza_Dough() },
