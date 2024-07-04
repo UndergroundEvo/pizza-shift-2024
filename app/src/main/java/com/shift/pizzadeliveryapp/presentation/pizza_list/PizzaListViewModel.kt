@@ -8,7 +8,6 @@ import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.common.Resource
 import com.shift.pizzadeliveryapp.domain.use_case.get_pizzas.GetPizzaUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject

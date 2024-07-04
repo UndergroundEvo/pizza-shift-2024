@@ -1,6 +1,5 @@
 package com.shift.pizzadeliveryapp.dependency_injection
 
-import com.google.gson.Gson
 import com.shift.pizzadeliveryapp.common.Constans
 import com.shift.pizzadeliveryapp.data.remote.PizzaRESTApi
 import com.shift.pizzadeliveryapp.data.repository.PizzaRepositoryImpl

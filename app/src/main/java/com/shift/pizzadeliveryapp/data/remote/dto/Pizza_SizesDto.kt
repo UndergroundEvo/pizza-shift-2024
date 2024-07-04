@@ -2,9 +2,7 @@ package com.shift.pizzadeliveryapp.data.remote.dto
 
 
 
-import androidx.core.content.ContextCompat.getString
 import com.google.gson.annotations.SerializedName
-import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.domain.models.Pizza_Size
 
 data class Pizza_SizesDto(
