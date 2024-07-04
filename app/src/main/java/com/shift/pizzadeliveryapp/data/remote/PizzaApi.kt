@@ -3,7 +3,7 @@ package com.shift.pizzadeliveryapp.data.remote
 import com.shift.pizzadeliveryapp.data.remote.dto.GetCatalogDto
 import retrofit2.http.GET
 
-interface PizzaRESTApi {
+interface PizzaApi {
 
     @GET("pizza/catalog")
     suspend fun getPizza() : GetCatalogDto

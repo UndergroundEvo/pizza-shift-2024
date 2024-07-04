@@ -1,7 +1,7 @@
 package com.shift.pizzadeliveryapp.dependency_injection
 
 import com.shift.pizzadeliveryapp.common.Constans
-import com.shift.pizzadeliveryapp.data.remote.PizzaRESTApi
+import com.shift.pizzadeliveryapp.data.remote.PizzaApi
 import com.shift.pizzadeliveryapp.data.repository.PizzaRepositoryImpl
 import com.shift.pizzadeliveryapp.domain.repository.PizzaRepository
 import dagger.Module
@@ -21,7 +21,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun providePizzaRESTApi(): PizzaRESTApi{
+    fun providePizzaRESTApi(): PizzaApi{
         val client = OkHttpClient()
         val interceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
         val clientBuilder: OkHttpClient.Builder =
@@ -33,12 +33,12 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .client(clientBuilder.build())
             .build()
-            .create(PizzaRESTApi::class.java)
+            .create(PizzaApi::class.java)
     }
 
     @Provides
     @Singleton
-    fun providesPizzaRepository(api: PizzaRESTApi): PizzaRepository{
+    fun providesPizzaRepository(api: PizzaApi): PizzaRepository{
         return PizzaRepositoryImpl(api)
     }
 }
