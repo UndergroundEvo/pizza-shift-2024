@@ -9,4 +9,14 @@
     <string name="shopping_cart">Shopping cart</string>
     <string name="profile">Profile</string>
     <string name="min_price">"from "</string>
+    <string name="arrow_back">Return to previous screen</string>
+    <string name="small_size">25 cm</string>
+    <string name="medium_size">30 cm</string>
+    <string name="large_size">35 cm</string>
+    <string name="any_size">Can be any size</string>
+    <string name="pizza_small">Small</string>
+    <string name="pizza_medium">Medium</string>
+    <string name="pizza_large">Large</string>
+    <string name="dough_word">dough</string>
+    <string name="add_ingr">Add to taste</string>
 </resources>

@@ -30,10 +30,10 @@ import com.shift.pizzadeliveryapp.domain.models.Pizza
 @Composable
 fun PizzaListItem(
     pizza: Pizza,
-    /*onItemClick: (Pizza) -> Unit*/
+    onItemClick: (Pizza) -> Unit
 ) {
     Card(
-        onClick = { /*onItemClick(pizza)*/ },
+        onClick = { onItemClick(pizza) },
         modifier = Modifier
             .fillMaxWidth(),
         shape = CardDefaults.shape,
@@ -61,7 +61,7 @@ fun PizzaListItem(
                 Spacer(modifier = Modifier.padding(8.dp))
                 Text(
                     text = stringResource(id = R.string.min_price)
-                            + pizza.sizes[0].price.toString(),
+                            + pizza.sizes[0].price.toString() + "₽",
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold
                 )

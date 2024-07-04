@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.shift.pizzadeliveryapp.presentation.BottonNavigationBar
+import com.shift.pizzadeliveryapp.presentation.Screen
 import com.shift.pizzadeliveryapp.presentation.pizza_list.PizzaListViewModel
 
 @Composable
@@ -35,7 +36,11 @@ fun PizzaListScreen(
                 modifier = Modifier.fillMaxSize()
             ) {
                 items(state.pizza){pizza ->
-                    PizzaListItem(pizza)
+                    PizzaListItem(
+                        pizza,
+                        onItemClick = {navController.navigate(Screen.PizzaItemScreen.route + "/${pizza.id}")
+                        }
+                    )
                 }
             }
         }

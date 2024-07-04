@@ -10,4 +10,14 @@
     <string name="shopping_cart">Корзина</string>
     <string name="profile">Профиль</string>
     <string name="min_price">"от "</string>
+    <string name="arrow_back">Вернуться на прошлый экран</string>
+    <string name="small_size">25 см</string>
+    <string name="medium_size">30 см</string>
+    <string name="large_size">35 см</string>
+    <string name="any_size">Может быть любого размера</string>
+    <string name="pizza_small">Маленькая</string>
+    <string name="pizza_medium">Средняя</string>
+    <string name="pizza_large">Большая</string>
+    <string name="dough_word">тесто</string>
+    <string name="add_ingr">Добавить по вкусу</string>
 </resources>
