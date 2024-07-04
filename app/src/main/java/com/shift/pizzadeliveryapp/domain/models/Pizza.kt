@@ -5,7 +5,7 @@ data class Pizza(
     val name: String,
 
     val ingredients: List<Pizza_Ingredients>,
-    val toppings: List<Pizza_Ingredients>,
+    val toppings: List<Pizza_Toppings>,
     val description: String,
     val sizes: List<Pizza_Size>,
     val dough: List<Pizza_Dough>,
