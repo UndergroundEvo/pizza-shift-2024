@@ -2,7 +2,7 @@ package com.shift.pizzadeliveryapp.domain.use_case.get_pizzas
 
 import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.common.Resource
-import com.shift.pizzadeliveryapp.data.remote.dto.toPizzaCatalog
+import com.shift.pizzadeliveryapp.data.converters.toPizzaCatalog
 import com.shift.pizzadeliveryapp.domain.models.PizzaCatalog
 import com.shift.pizzadeliveryapp.domain.repository.PizzaRepository
 import kotlinx.coroutines.flow.Flow

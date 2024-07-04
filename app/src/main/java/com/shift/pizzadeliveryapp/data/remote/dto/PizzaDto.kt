@@ -2,7 +2,6 @@ package com.shift.pizzadeliveryapp.data.remote.dto
 
 
 import com.google.gson.annotations.SerializedName
-import com.shift.pizzadeliveryapp.domain.models.Pizza
 
 data class PizzaDto(
     @SerializedName("allergens")
@@ -59,26 +58,3 @@ data class PizzaDto(
     @SerializedName("totalFat")
     val totalFat: String
 )
-
-fun PizzaDto.toPizza(): Pizza {
-    return Pizza(
-        id = id,
-        name = name,
-        ingredients = ingredients.map { it.toPizza_Ingredients() },
-        toppings = toppings.map { it.toPizza_Toppings() },
-        description = description,
-        sizes = sizes.map { it.toPizza_Size() },
-        dough = doughs.map { it.toPizza_Dough() },
-        calories = calories,
-        protein = protein,
-        totalFat = totalFat,
-        carbohydrates = carbohydrates,
-        sodium = sodium,
-        allergens = allergens,
-        isVegetarian = isVegetarian,
-        isGlutenFree = isGlutenFree,
-        isNew = isNew,
-        isHit = isHit,
-        img = img
-        )
-}

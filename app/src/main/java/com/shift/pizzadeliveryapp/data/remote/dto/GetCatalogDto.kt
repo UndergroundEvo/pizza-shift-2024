@@ -2,7 +2,6 @@ package com.shift.pizzadeliveryapp.data.remote.dto
 
 
 import com.google.gson.annotations.SerializedName
-import com.shift.pizzadeliveryapp.domain.models.PizzaCatalog
 
 /*
 * У некоторых полей данных есть Enum
@@ -16,11 +15,3 @@ data class GetCatalogDto(
     @SerializedName("success")
     val success: Boolean
 )
-
-
-//Если смысл засунуть все эти конвертеры в какие-нибудь отдельные файлы?
-fun GetCatalogDto.toPizzaCatalog() : PizzaCatalog{
-    return PizzaCatalog(
-        catalog = catalog.map { it.toPizza() }
-    )
-}
