@@ -1,6 +1,10 @@
 package com.shift.pizzadeliveryapp.data.remote
 
 import com.shift.pizzadeliveryapp.data.remote.dto.GetCatalogDto
+import com.shift.pizzadeliveryapp.data.remote.dto.OtpPhoneDto
+import com.shift.pizzadeliveryapp.data.remote.dto.OtpReturnDto
+import retrofit2.http.Body
+import retrofit2.http.Field
 import retrofit2.http.GET
 import retrofit2.http.POST
 
@@ -10,7 +14,7 @@ interface PizzaApi {
     suspend fun getPizza() : GetCatalogDto
 
     @POST("auth/otp")
-    suspend fun getOtpCode()
+    suspend fun getOtpCode(@Body phone : OtpPhoneDto) : OtpReturnDto
 
 /*    @POST("pizza/payment")
     suspend fun postPayment() //тут еще что-то будет
