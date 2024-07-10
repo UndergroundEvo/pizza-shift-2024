@@ -12,6 +12,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.shift.pizzadeliveryapp.R
 
+// чую что этой штуке скоро стоит уехать от сюда
+// много где еще topbar будет
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PizzaItemTopBar(navController: NavController) {

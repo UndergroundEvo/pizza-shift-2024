@@ -19,4 +19,10 @@
     <string name="pizza_large">Large</string>
     <string name="dough_word">dough</string>
     <string name="add_ingr">Add to taste</string>
+    <string name="text_enter_phone">Enter your phone number to login to your personal account</string>
+    <string name="authorization_text">Authorization</string>
+    <string name="continue_text">Continue</string>
+    <string name="phone_example_text">Enter any number like \"89990009999\"</string>
+    <string name="text_enter_code">Enter the verification code to log in to your personal account</string>
+    <string name="text_code">Code</string>
 </resources>

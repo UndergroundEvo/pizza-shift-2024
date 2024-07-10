@@ -20,4 +20,10 @@
     <string name="pizza_large">Большая</string>
     <string name="dough_word">тесто</string>
     <string name="add_ingr">Добавить по вкусу</string>
+    <string name="text_enter_phone">Введите номер телефона для входа  в личный кабинет</string>
+    <string name="authorization_text">Авторизация</string>
+    <string name="continue_text">Продожить</string>
+    <string name="phone_example_text">Введите любой номер формата \"89990009999\"</string>
+    <string name="text_enter_code">Введите проверочный код для входа  в личный кабинет</string>
+    <string name="text_code">Код</string>
 </resources>
