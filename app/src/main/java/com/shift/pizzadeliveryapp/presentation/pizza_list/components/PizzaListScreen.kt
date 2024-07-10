@@ -24,7 +24,7 @@ fun PizzaListScreen(
 
     Scaffold(
         topBar = { PizzaListTopBar() },
-        bottomBar = { BottonNavigationBar() }
+        bottomBar = { BottonNavigationBar(navController) }
     ) { paddingValues ->
         Box(
             modifier = Modifier.fillMaxSize().padding(paddingValues),
