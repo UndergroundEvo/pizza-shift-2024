@@ -1,9 +1,5 @@
 package com.shift.pizzadeliveryapp.presentation.authorization.components
 
-import android.content.Intent
-import android.net.Uri
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -27,16 +23,12 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.data.remote.dto.OtpPhoneDto
-import com.shift.pizzadeliveryapp.presentation._common.TopBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

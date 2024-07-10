@@ -7,10 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.shift.pizzadeliveryapp.data.remote.dto.OtpPhoneDto
 import com.shift.pizzadeliveryapp.data.remote.dto.OtpReturnDto
 import com.shift.pizzadeliveryapp.domain.use_case.getOtpCode.GetOtpUseCase
-import com.shift.pizzadeliveryapp.presentation.pizza_list.PizzaListState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
