@@ -14,41 +14,49 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
+import androidx.navigation.NavController
 import com.shift.pizzadeliveryapp.R
 
 data class BottomNavigationItem(
     val title: String,
     val icon: ImageVector,
     val hasNews: Boolean,
-    val badgeCount: Int? = null
+    val badgeCount: Int? = null,
+    val route: String
 )
 
 @Composable
-fun BottonNavigationBar() {
+fun BottonNavigationBar(
+    navController: NavController
+) {
     val items = listOf(
         BottomNavigationItem(
             title = stringResource(R.string.topAppBar_name),
             icon = ImageVector.vectorResource(R.drawable.baseline_local_pizza_24),
             hasNews = false,
-            badgeCount = null
+            badgeCount = null,
+            route = Screen.PizzaListScreen.route
         ),
         BottomNavigationItem(
             title = stringResource(R.string.orders),
             icon = ImageVector.vectorResource(R.drawable.baseline_access_time_24),
             hasNews = false,
-            badgeCount = null
+            badgeCount = null,
+            route = Screen.AuthorizationScreen.route //placeholder
         ),
         BottomNavigationItem(
             title = stringResource(R.string.shopping_cart),
             icon = ImageVector.vectorResource(R.drawable.baseline_shopping_basket_24),
             hasNews = false,
-            badgeCount = null
+            badgeCount = null,
+            route = Screen.AuthorizationScreen.route //placeholder
         ),
         BottomNavigationItem(
             title = stringResource(R.string.profile),
             icon = ImageVector.vectorResource(R.drawable.baseline_account_circle_24),
             hasNews = false,
-            badgeCount = null
+            badgeCount = null,
+            route = Screen.AuthorizationScreen.route
         )
     )
     var selectedItemIndex by rememberSaveable { mutableStateOf(0) }
@@ -59,7 +67,7 @@ fun BottonNavigationBar() {
                 selected = selectedItemIndex == index,
                 onClick = {
                     selectedItemIndex = index
-                    /*navController.navigate(NavigationKeys.MAIN_AFISHA)*/
+                    navController.navigate(item.route)
                 },
                 label = { Text(text = item.title) },
                 icon = {
