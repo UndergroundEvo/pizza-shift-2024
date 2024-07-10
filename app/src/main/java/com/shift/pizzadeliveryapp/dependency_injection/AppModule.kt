@@ -21,7 +21,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun providePizzaRESTApi(): PizzaApi{
+    fun providePizzaApi(): PizzaApi{
         val client = OkHttpClient()
         val interceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
         val clientBuilder: OkHttpClient.Builder =

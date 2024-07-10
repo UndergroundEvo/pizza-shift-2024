@@ -2,6 +2,8 @@ package com.shift.pizzadeliveryapp.data.repository
 
 import com.shift.pizzadeliveryapp.data.remote.PizzaApi
 import com.shift.pizzadeliveryapp.data.remote.dto.GetCatalogDto
+import com.shift.pizzadeliveryapp.data.remote.dto.OtpPhoneDto
+import com.shift.pizzadeliveryapp.data.remote.dto.OtpReturnDto
 import com.shift.pizzadeliveryapp.domain.repository.PizzaRepository
 import javax.inject.Inject
 
@@ -13,4 +15,7 @@ class PizzaRepositoryImpl @Inject constructor(
         return api.getPizza()
     }
 
+    override suspend fun getOtpCode(phone: String): OtpReturnDto {
+        return api.getOtpCode(OtpPhoneDto(phone))
+    }
 }
