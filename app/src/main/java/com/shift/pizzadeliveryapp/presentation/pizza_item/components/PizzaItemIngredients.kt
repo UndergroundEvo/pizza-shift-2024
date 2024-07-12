@@ -17,15 +17,20 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.shift.pizzadeliveryapp.common.Constans
 import com.shift.pizzadeliveryapp.domain.models.Pizza_Toppings
+import com.shift.pizzadeliveryapp.presentation.translate.toRuPizzaIngredient
+import com.shift.pizzadeliveryapp.presentation.translate.toRuPizzaSize
 
 @Composable
 fun PizzaItemIngredients(
     ingredients: Pizza_Toppings,
-    modifier: Modifier
-){
+    modifier: Modifier,
+    addToPizza: (Pizza_Toppings) -> Unit
+) {
     ElevatedCard(
-        onClick = { /*TODO*/ },
-        modifier = Modifier.size(120.dp,200.dp),
+        onClick = {
+            addToPizza(ingredients)
+        },
+        modifier = Modifier.size(120.dp, 200.dp),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 10.dp,
             focusedElevation = 30.dp,
@@ -41,20 +46,20 @@ fun PizzaItemIngredients(
                     model = Constans.BASE_URL + ingredients.img,
                     contentDescription = ingredients.name,
 
-                )
+                    )
             }
             Box(
                 contentAlignment = Alignment.Center,
-            ){
+            ) {
                 Text(
-                    text = ingredients.name,
+                    text = toRuPizzaIngredient(name = ingredients.name),
                     fontSize = 13.sp,
                     modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
                 )
             }
             Box(
                 contentAlignment = Alignment.Center,
-            ){
+            ) {
                 Text(
                     text = ingredients.cost.toString() + " ₽",
                     fontSize = 18.sp,
@@ -66,5 +71,5 @@ fun PizzaItemIngredients(
 
         }
     }
-    
+
 }

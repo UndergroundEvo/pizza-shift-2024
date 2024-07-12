@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.shift.pizzadeliveryapp.presentation.BottonNavigationBar
+import com.shift.pizzadeliveryapp.presentation._common.BottonNavigationBar
 import com.shift.pizzadeliveryapp.presentation.Screen
 import com.shift.pizzadeliveryapp.presentation.pizza_list.PizzaListViewModel
 

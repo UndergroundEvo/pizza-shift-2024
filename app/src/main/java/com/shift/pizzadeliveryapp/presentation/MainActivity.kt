@@ -3,10 +3,13 @@ package com.shift.pizzadeliveryapp.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.shift.pizzadeliveryapp.presentation.authorization.components.AuthorizationScreen
+import com.shift.pizzadeliveryapp.presentation.backet.BasketViewModel
+import com.shift.pizzadeliveryapp.presentation.backet.components.BasketScreen
 import com.shift.pizzadeliveryapp.presentation.pizza_item.components.PizzaItemScreen
 import com.shift.pizzadeliveryapp.presentation.pizza_list.components.PizzaListScreen
 import com.shift.pizzadeliveryapp.presentation.theme.PizzaDeliveryAppTheme
@@ -14,7 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 /* TODO
   - Вынести всю навигацию в зависимость
-  - перевести все что приходит с бека в data слое
+  - перевести все что приходит с бека в presentation
   - поставить пиццы по центру в листе
   - сделать маску для ввода номера
   - додумать везде состояния для ошибки и для загрузки (возможно shimmer)
@@ -28,6 +31,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             PizzaDeliveryAppTheme {
                 val navController = rememberNavController()
+                val basketViewModel : BasketViewModel = hiltViewModel()
+
                 NavHost(navController = navController, startDestination = Screen.PizzaListScreen.route){
                     composable(
                         route = Screen.PizzaListScreen.route
@@ -37,13 +42,24 @@ class MainActivity : ComponentActivity() {
                     composable(
                         route = Screen.PizzaItemScreen.route + "/{pizzaId}"
                     ){
-                        PizzaItemScreen(navController = navController)
+                        PizzaItemScreen(
+                            navController = navController,
+                            onAddToBasket =  {pizza ->
+                                basketViewModel.addPizzaToBasket(pizza)
+                                navController.popBackStack()
+                            }
+                        )
                     }
                     composable(
                         route = Screen.AuthorizationScreen.route
                     ){
                         AuthorizationScreen(navController = navController)
-                    } // точно правильно что у меня везде navController есть???
+                    }
+                    composable(
+                        route = Screen.BasketScreen.route
+                    ){
+                        BasketScreen(navController = navController, basketViewModel)
+                    }
                 }
             }
         }
