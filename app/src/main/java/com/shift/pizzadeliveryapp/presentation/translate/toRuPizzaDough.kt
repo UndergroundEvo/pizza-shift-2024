@@ -4,7 +4,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.data.enums.PizzaDough
-import com.shift.pizzadeliveryapp.data.enums.PizzaSize
 
 @Composable
 fun toRuPizzaDough(name: String) =

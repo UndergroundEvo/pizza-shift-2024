@@ -16,8 +16,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.navigation.NavController
 import com.shift.pizzadeliveryapp.R
-import com.shift.pizzadeliveryapp.presentation.Screen
 import com.shift.pizzadeliveryapp.presentation.BottomNavigationItem
+import com.shift.pizzadeliveryapp.presentation.Screen
 
 @Composable
 fun BottonNavigationBar(

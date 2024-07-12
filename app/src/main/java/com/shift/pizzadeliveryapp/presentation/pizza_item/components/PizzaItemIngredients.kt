@@ -18,7 +18,6 @@ import coil.compose.AsyncImage
 import com.shift.pizzadeliveryapp.common.Constans
 import com.shift.pizzadeliveryapp.domain.models.Pizza_Toppings
 import com.shift.pizzadeliveryapp.presentation.translate.toRuPizzaIngredient
-import com.shift.pizzadeliveryapp.presentation.translate.toRuPizzaSize
 
 @Composable
 fun PizzaItemIngredients(

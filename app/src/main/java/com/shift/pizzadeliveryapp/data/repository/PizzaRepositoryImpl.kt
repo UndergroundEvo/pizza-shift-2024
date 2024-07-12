@@ -7,7 +7,6 @@ import com.shift.pizzadeliveryapp.data.remote.dto.OtpReturnDto
 import com.shift.pizzadeliveryapp.data.remote.dto.SignInInputDto
 import com.shift.pizzadeliveryapp.data.remote.dto.SignInOutputDto
 import com.shift.pizzadeliveryapp.domain.repository.PizzaRepository
-import retrofit2.http.Body
 import javax.inject.Inject
 
 class PizzaRepositoryImpl @Inject constructor(

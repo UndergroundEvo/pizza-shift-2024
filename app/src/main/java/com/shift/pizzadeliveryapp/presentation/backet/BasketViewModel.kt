@@ -1,6 +1,5 @@
 package com.shift.pizzadeliveryapp.presentation.backet
 
-import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
@@ -8,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import com.shift.pizzadeliveryapp.domain.models.DebitCard
 import com.shift.pizzadeliveryapp.domain.models.Order
 import com.shift.pizzadeliveryapp.domain.models.Person
-import com.shift.pizzadeliveryapp.domain.models.Pizza
 import com.shift.pizzadeliveryapp.domain.models.PizzaOrder
 import com.shift.pizzadeliveryapp.domain.models.ReceiverAddress
 import javax.inject.Inject

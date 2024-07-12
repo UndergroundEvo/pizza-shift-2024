@@ -4,7 +4,6 @@ import com.shift.pizzadeliveryapp.data.remote.dto.GetCatalogDto
 import com.shift.pizzadeliveryapp.data.remote.dto.OtpReturnDto
 import com.shift.pizzadeliveryapp.data.remote.dto.SignInInputDto
 import com.shift.pizzadeliveryapp.data.remote.dto.SignInOutputDto
-import retrofit2.http.Body
 
 interface PizzaRepository {
 

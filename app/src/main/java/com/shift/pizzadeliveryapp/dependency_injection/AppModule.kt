@@ -1,12 +1,5 @@
 package com.shift.pizzadeliveryapp.dependency_injection
 
-import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.core.handlers.ReplaceFileCorruptionHandler
-import androidx.datastore.preferences.core.PreferenceDataStoreFactory
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.emptyPreferences
-import androidx.datastore.preferences.preferencesDataStoreFile
 import com.shift.pizzadeliveryapp.common.Constans
 import com.shift.pizzadeliveryapp.data.remote.PizzaApi
 import com.shift.pizzadeliveryapp.data.repository.PizzaRepositoryImpl
@@ -14,7 +7,6 @@ import com.shift.pizzadeliveryapp.domain.repository.PizzaRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

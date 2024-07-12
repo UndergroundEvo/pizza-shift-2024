@@ -7,7 +7,6 @@ import com.shift.pizzadeliveryapp.data.remote.dto.PaymentDto
 import com.shift.pizzadeliveryapp.data.remote.dto.PaymentStatusDto
 import com.shift.pizzadeliveryapp.data.remote.dto.SignInInputDto
 import com.shift.pizzadeliveryapp.data.remote.dto.SignInOutputDto
-import com.shift.pizzadeliveryapp.domain.models.Order
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST

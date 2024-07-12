@@ -1,6 +1,5 @@
 package com.shift.pizzadeliveryapp.presentation.pizza_list
 
-import com.shift.pizzadeliveryapp.domain.models.Order
 import com.shift.pizzadeliveryapp.domain.models.Pizza
 
 data class PizzaListState(

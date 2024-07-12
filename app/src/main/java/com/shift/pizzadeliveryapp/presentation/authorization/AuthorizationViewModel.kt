@@ -1,10 +1,7 @@
 package com.shift.pizzadeliveryapp.presentation.authorization
 
-import android.content.Context
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.ui.platform.LocalContext
-import androidx.datastore.core.DataStore
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shift.pizzadeliveryapp.data.remote.dto.OtpPhoneDto
