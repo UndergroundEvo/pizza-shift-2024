@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Пицца \"Шифт\"</string>
+    <string name="http_error">Ошибка сервера</string>
+    <string name="io_error">Нет подключения к интернету!</string>
+    <string name="item_load">Загружаем</string>
+    <string name="item_error">"Проблема при загрузке предмета! "</string>
+    <string name="topAppBar_name">Пицца</string>
+    <string name="orders">Заказы</string>
+    <string name="shopping_cart">Корзина</string>
+    <string name="profile">Профиль</string>
+    <string name="min_price">"от "</string>
+    <string name="arrow_back">Вернуться на прошлый экран</string>
+    <string name="small_size">25 см</string>
+    <string name="medium_size">30 см</string>
+    <string name="large_size">35 см</string>
+    <string name="any_size">Может быть любого размера</string>
+    <string name="pizza_small">Маленькая</string>
+    <string name="pizza_medium">Средняя</string>
+    <string name="pizza_large">Большая</string>
+    <string name="dough_word">тесто</string>
+    <string name="add_ingr">Добавить по вкусу</string>
+    <string name="text_enter_phone">Введите номер телефона для входа  в личный кабинет</string>
+    <string name="authorization_text">Авторизация</string>
+    <string name="continue_text">Продожить</string>
+    <string name="phone_example_text">Введите любой номер формата \"89990009999\"</string>
+    <string name="text_enter_code">Введите проверочный код для входа  в личный кабинет</string>
+    <string name="text_code">Код</string>
+</resources>

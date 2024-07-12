@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">PizzaDeliveryApp</string>
+    <string name="http_error">Http exception ocurred</string>
+    <string name="io_error">IOException ocurred</string>
+    <string name="item_load">Loading...</string>
+    <string name="item_error">Item error occured</string>
+    <string name="topAppBar_name">Pizza</string>
+    <string name="orders">Orders</string>
+    <string name="shopping_cart">Shopping cart</string>
+    <string name="profile">Profile</string>
+    <string name="min_price">"from "</string>
+    <string name="arrow_back">Return to previous screen</string>
+    <string name="small_size">25 cm</string>
+    <string name="medium_size">30 cm</string>
+    <string name="large_size">35 cm</string>
+    <string name="any_size">Can be any size</string>
+    <string name="pizza_small">Small</string>
+    <string name="pizza_medium">Medium</string>
+    <string name="pizza_large">Large</string>
+    <string name="dough_word">dough</string>
+    <string name="add_ingr">Add to taste</string>
+    <string name="text_enter_phone">Enter your phone number to login to your personal account</string>
+    <string name="authorization_text">Authorization</string>
+    <string name="continue_text">Continue</string>
+    <string name="phone_example_text">Enter any number like \"89990009999\"</string>
+    <string name="text_enter_code">Enter the verification code to log in to your personal account</string>
+    <string name="text_code">Code</string>
 </resources>

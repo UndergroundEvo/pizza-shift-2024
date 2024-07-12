@@ -1,6 +1,5 @@
-package com.shift.pizzadeliveryapp.ui.theme
+package com.shift.pizzadeliveryapp.presentation.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
