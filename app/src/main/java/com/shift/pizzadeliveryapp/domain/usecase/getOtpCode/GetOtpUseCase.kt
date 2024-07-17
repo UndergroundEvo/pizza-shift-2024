@@ -1,4 +1,4 @@
-package com.shift.pizzadeliveryapp.domain.use_case.getOtpCode
+package com.shift.pizzadeliveryapp.domain.usecase.getOtpCode
 
 import com.shift.pizzadeliveryapp.data.remote.PizzaApi
 import com.shift.pizzadeliveryapp.data.remote.dto.OtpPhoneDto

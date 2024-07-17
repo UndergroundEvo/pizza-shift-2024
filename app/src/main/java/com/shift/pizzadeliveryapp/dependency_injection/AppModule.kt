@@ -41,4 +41,12 @@ object AppModule {
     fun providesPizzaRepository(api: PizzaApi): PizzaRepository{
         return PizzaRepositoryImpl(api)
     }
+
+    /*@Singleton
+    @Provides
+    fun provideDataStore(@ApplicationContext context: Context): DataStore<Preferences> {
+        return PreferenceDataStoreFactory.create(
+            corruptionHandler = ReplaceFileCorruptionHandler(produceNewData = { emptyPreferences() }),
+            produceFile = { context.preferencesDataStoreFile(Session.DATA) })
+    }*/
 }

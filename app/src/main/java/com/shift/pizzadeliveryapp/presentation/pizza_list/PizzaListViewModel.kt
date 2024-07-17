@@ -6,7 +6,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.common.Resource
-import com.shift.pizzadeliveryapp.domain.use_case.get_pizzas.GetPizzaUseCase
+import com.shift.pizzadeliveryapp.domain.models.Pizza
+import com.shift.pizzadeliveryapp.domain.usecase.getpizzas.GetPizzaUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -42,6 +43,10 @@ class PizzaListViewModel @Inject constructor(
                 }
             }
         }.launchIn(viewModelScope)
+    }
+
+    fun addPizzaToBasket(pizza: Pizza) {
+        _state.value.basket.add(pizza)
     }
 
 }

@@ -1,4 +1,4 @@
-package com.shift.pizzadeliveryapp.domain.use_case.get_pizzas
+package com.shift.pizzadeliveryapp.domain.usecase.getpizzas
 
 import com.shift.pizzadeliveryapp.R
 import com.shift.pizzadeliveryapp.common.Resource

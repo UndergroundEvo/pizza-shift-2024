@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shift.pizzadeliveryapp.common.Constans
 import com.shift.pizzadeliveryapp.common.Resource
-import com.shift.pizzadeliveryapp.domain.use_case.get_pizzas.GetPizzaUseCase
+import com.shift.pizzadeliveryapp.domain.usecase.getpizzas.GetPizzaUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -21,6 +21,8 @@ class PizzaItemViewModel @Inject constructor(
     //не спрашивая пиццы о всех о всех сразу??7
     // я туп и не придумал как по другому 🤓
     // сохранять определенную пиццу через Room и потом вытягивать (►__◄)
+
+    // спасибо за ответ((((
 ) : ViewModel() {
     private val _state = mutableStateOf(PizzaItemState())
     val state: State<PizzaItemState> = _state

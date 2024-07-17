@@ -1,4 +1,4 @@
-package com.shift.pizzadeliveryapp.presentation
+package com.shift.pizzadeliveryapp.presentation._common
 
 import androidx.compose.material3.Badge
 import androidx.compose.material3.BadgedBox
@@ -16,19 +16,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.navigation.NavController
 import com.shift.pizzadeliveryapp.R
-
-data class BottomNavigationItem(
-    val title: String,
-    val icon: ImageVector,
-    val hasNews: Boolean,
-    val badgeCount: Int? = null,
-    val route: String
-)
+import com.shift.pizzadeliveryapp.presentation.BottomNavigationItem
+import com.shift.pizzadeliveryapp.presentation.Screen
 
 @Composable
 fun BottonNavigationBar(
     navController: NavController
 ) {
+    var selectedItemIndex by rememberSaveable { mutableStateOf(0) }
+
+    //там используеться stringResource что являеться composeble элементом
+    //как этому переехать в класс???
     val items = listOf(
         BottomNavigationItem(
             title = stringResource(R.string.topAppBar_name),
@@ -49,7 +47,7 @@ fun BottonNavigationBar(
             icon = ImageVector.vectorResource(R.drawable.baseline_shopping_basket_24),
             hasNews = false,
             badgeCount = null,
-            route = Screen.AuthorizationScreen.route //placeholder
+            route = Screen.BasketScreen.route //placeholder
         ),
         BottomNavigationItem(
             title = stringResource(R.string.profile),
@@ -59,12 +57,12 @@ fun BottonNavigationBar(
             route = Screen.AuthorizationScreen.route
         )
     )
-    var selectedItemIndex by rememberSaveable { mutableStateOf(0) }
 
     NavigationBar {
         items.forEachIndexed { index, item ->
             NavigationBarItem(
-                selected = selectedItemIndex == index,
+               /* selected =  selectedItemIndex == index,*/
+                selected = navController.currentDestination?.route == item.route,
                 onClick = {
                     selectedItemIndex = index
                     navController.navigate(item.route)
@@ -86,7 +84,6 @@ fun BottonNavigationBar(
                     }
                 }
             )
-
         }
     }
 }
